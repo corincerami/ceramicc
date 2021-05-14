@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content {
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-frames {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: [left] 15% [first] auto [middle] 15% [second] auto [right] 15% [end];
+  grid-template-rows: [top] 50px [first] auto [middle] 50px [second] auto [bottom] 50px;
+}
+
+.content-frame {
+  text-align: center;
+  max-width: 100%
+}
+
+.content-frame img {
+  width: 100%;
+}
+
+.content-frame-first {
+  grid-column-start: first;
+  grid-column-end: middle;
+  grid-row-start: first;
+  grid-row-end: middle;
+}
+
+.content-frame-second {
+  grid-column-start: second;
+  grid-column-end: right;
+  grid-row-start: first;
+  grid-row-end: middle;
+}
+
+.content-frame-third {
+  grid-column-start: first;
+  grid-column-end: middle;
+  grid-row-start: second;
+  grid-row-end: bottom;
+}
+
+.content-frame-fourth {
+  grid-column-start: second;
+  grid-column-end: right;
+  grid-row-start: second;
+  grid-row-end: bottom;
+}
+
+.content-bottom {
+  text-align: center;
+}
+
+.comic-content {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: [left] 15% [first] auto [right] 15% [end];
+  grid-template-rows: [top] 50px [first] 100px [gapone] 50px [second] auto [gaptwo] 50px [third] 100px [bottom] 50px;
+}
+
+.comic-page {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  grid-column-start: first;
+  grid-column-end: right;
+  grid-row-start: second;
+  grid-row-end: gaptwo;
+}
+
+.comic-page img {
+  max-width: 100%;
+}
+
+.comic-title {
+  text-align: center;
+  grid-column-start: first;
+  grid-column-end: right;
+  grid-row-start: first;
+  grid-row-end: gapone;
 }
