@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import placeholder from './placeholder.jpg';
 
 function Home() {
@@ -6,20 +7,28 @@ function Home() {
     <div>
       <div className="content-frames">
         <div className="content-frame content-frame-first">
-          <img src={placeholder} alt="placeholder" />
-          <div>Comics</div>
+          <Link to="/comics">
+            <img src={placeholder} alt="placeholder" />
+            <div>Comics</div>
+          </Link>
         </div>
         <div className="content-frame content-frame-second">
-          <img src={placeholder} alt="placeholder" />
-          <div>Mars Rover Photos API</div>
+          <a href="https://github.com/chrisccerami/mars-photo-api">
+            <img src={placeholder} alt="placeholder" />
+            <div>Mars Rover Photos API</div>
+          </a>
         </div>
         <div className="content-frame content-frame-third">
-          <img src={placeholder} alt="placeholder" />
-          <div>Code</div>
+          <a href="https://github.com/chrisccerami">
+            <img src={placeholder} alt="placeholder" />
+            <div>Code</div>
+          </a>
         </div>
         <div className="content-frame content-frame-fourth">
-          <img src={placeholder} alt="placeholder" />
-          <div>Blog</div>
+          <Link to="/blog">
+            <img src={placeholder} alt="placeholder" />
+            <div>Blog</div>
+          </Link>
         </div>
       </div>
       <div className="content-bottom">

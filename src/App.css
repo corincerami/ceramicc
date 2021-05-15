@@ -10,6 +10,11 @@
   width: 100vw;
 }
 
+.App-header a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .main-content {
   height: 100vh;
 }
@@ -66,7 +71,7 @@
   width: 100%;
   display: inline-grid;
   grid-template-columns: [left] 15% [first] auto [right] 15% [end];
-  grid-template-rows: [top] 50px [first] 100px [gapone] 50px [second] auto [gaptwo] 50px [third] 100px [bottom] 50px;
+  grid-template-rows: [top] 25px [first] 100px [gapone] 30px [second] auto [gaptwo] 30px [third] 50px [bottom] 30px;
 }
 
 .comic-page {
@@ -81,6 +86,7 @@
 
 .comic-page img {
   max-width: 100%;
+  max-height: 90vh;
 }
 
 .comic-title {
@@ -89,4 +95,12 @@
   grid-column-end: right;
   grid-row-start: first;
   grid-row-end: gapone;
+}
+
+.comic-pagination {
+  text-align: center;
+  grid-column-start: first;
+  grid-column-end: right;
+  grid-row-start: third;
+  grid-row-end: bottom;
 }

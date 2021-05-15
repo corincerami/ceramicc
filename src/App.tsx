@@ -6,7 +6,8 @@ import Comic from './Comic';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 
 function App() {
@@ -14,11 +15,11 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          Chris C Cerami
+          <Link to="/">Chris C Cerami</Link>
         </header>
         <div className="main-content">
           <Switch>
-            <Route path="/comics/:title/:page">
+            <Route path="/comics/:slug/:page">
               <Comic/>
             </Route>
             <Route path="/comics">

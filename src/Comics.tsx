@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import lonelyFungusOne from './comics/lonely-fungus/lonely-fungus-1.png';
 import placeholder from './placeholder.jpg';
 
 function Comics() {
@@ -6,8 +8,10 @@ function Comics() {
     <>
       <div className="content-frames">
         <div className="content-frame content-frame-first">
-          <img src={placeholder} alt="placeholder" />
-          <div>Mars Abandoned</div>
+          <Link to="/comics/lonely-fungus/1">
+            <img src={lonelyFungusOne} alt="First page of the comic Lonely Fungus, depicting a mushroom in a forest" />
+            <div>Lonely Fungus</div>
+          </Link>
         </div>
         <div className="content-frame content-frame-second">
           <img src={placeholder} alt="placeholder" />
