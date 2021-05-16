@@ -22,8 +22,8 @@
 .content-frames {
   width: 100%;
   display: inline-grid;
-  grid-template-columns: [left] 15% [first] auto [middle] 15% [second] auto [right] 15% [end];
-  grid-template-rows: [top] 50px [first] auto [middle] 50px [second] auto [bottom] 50px;
+  grid-template-columns: [left] 15% [first] auto [middle] 5% [second] auto [right] 15% [end];
+  grid-template-rows: [top] 50px [first] auto [middle] 20px [second] auto [bottom] 50px;
 }
 
 .content-frame {
@@ -32,7 +32,7 @@
 }
 
 .content-frame img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .content-frame-first {
