@@ -1,5 +1,5 @@
 .App-header {
-  background-color: #282c34;
+  background-color: #045c5a;;
   min-height: 50px;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,11 @@
 
 .main-content {
   height: 100vh;
+}
+
+.main-content a {
+  color: #045c5a;
+  font-size: 24px;
 }
 
 .content-frames {
