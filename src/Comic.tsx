@@ -51,7 +51,7 @@ function previousPageLink(page: string, slug: string) {
 }
 
 function nextPageLink(page: string, slug: string, comic: ComicData) {
-  if (Number.parseInt(page) == comic.pages) {
+  if (Number.parseInt(page) === comic.pages) {
     return <></>;
   } else {
     return <Link to={`/comics/${slug}/${Number.parseInt(page) + 1}`}>Next</Link>;
